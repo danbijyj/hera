@@ -113,7 +113,7 @@ const Nav = () => {
                         <p>
                             <FiX onClick={() => setIsOpen(false)} />
                         </p>
-                        <img src="./images/logo.png" alt="logo" />
+                        <img src="./images/logo_on.png" alt="logo" />
                     </div>
                 </div>
                 <div className="over_inner">

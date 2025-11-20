@@ -8,7 +8,7 @@
     background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(12px);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
-    color: #fff;
+    color: #000;
     z-index: 100;
     .inner {
         width: 1440px;
@@ -27,13 +27,13 @@
         }
         .menu {
             cursor: pointer;
-            font-size: 30px;
+            font-size: 28px;
         }
         .icons {
-            font-size: 20px;
+            font-size: 16px;
             ul {
                 display: flex;
-                gap: 20px;
+                gap: 16px;
                 li {
                     cursor: pointer;
                 }
@@ -51,6 +51,7 @@
         transition: max-height 0.4s ease;
         &.open {
             max-height: 700px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
         }
         .over_top {
             background-color: #000;

@@ -1,0 +1,89 @@
+@use '../../../styles/global.scss';
+
+.section5 {
+    height: 1038px;
+    background: url('/images/bg_s5.png') no-repeat center/cover;
+    position: relative;
+    overflow: hidden;
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(255, 255, 255, 0.6);
+        z-index: 1;
+    }
+    > * {
+        position: relative;
+        z-index: 2;
+    }
+    .rise {
+        color: #fff;
+        font-size: 150px;
+        line-height: 0.8;
+        white-space: nowrap;
+        position: absolute;
+        top: 0;
+    }
+    .inner {
+        .title {
+            font-size: 44px;
+            margin-top: 180px;
+            margin-bottom: 50px;
+        }
+        .sun_wrap {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    width: 336px;
+                    position: relative;
+                    overflow: hidden;
+                    .sun {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 336px;
+                        height: 597px;
+                        opacity: 0;
+                        transition: opacity 0.2s ease;
+                        z-index: 10;
+                        border: 1px solid #000;
+                        background-color: #fff;
+                        img {
+                            border-bottom: 1px solid #000;
+                            height: 420px;
+                            object-fit: cover;
+                        }
+                        .detail {
+                            padding: 30px;
+                            .product {
+                                font-family: 'pretendard';
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                font-size: 18px;
+                                font-weight: 500;
+                                margin-bottom: 5px;
+                            }
+                            .price {
+                                font-family: 'pretendard';
+                                font-weight: 500;
+                                margin-bottom: 16px;
+                            }
+                            button {
+                                background-color: #000;
+                                color: #fff;
+                                width: 100%;
+                                padding: 10px 0;
+                                cursor: pointer;
+                            }
+                        }
+                        &.show {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
