@@ -1,0 +1,43 @@
+@use '../../../styles/global.scss';
+
+.section3 {
+    padding: 100px 0;
+    overflow: hidden;
+    position: relative;
+    .just {
+        font-size: 120px;
+        white-space: nowrap;
+        display: inline-block;
+    }
+    .here {
+        font-size: 200px;
+        white-space: nowrap;
+        display: inline-block;
+    }
+    .seoul-wrapper {
+        position: absolute;
+        bottom: 60px;
+        display: flex;
+        width: max-content;
+        transform: rotate(6deg);
+        animation: seoul 20s linear infinite;
+    }
+    .seoul {
+        font-size: 64px;
+        letter-spacing: 12px;
+        background-color: #fff;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        white-space: nowrap;
+        display: inline-block;
+        flex-shrink: 0;
+    }
+    @keyframes seoul {
+        0% {
+            transform: rotate(6deg) translateX(0);
+        }
+        100% {
+            transform: rotate(6deg) translateX(-50%);
+        }
+    }
+}
