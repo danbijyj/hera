@@ -1,0 +1,58 @@
+@use '../../styles/global.scss';
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding-top: 100px;
+    .inner {
+        .contents {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'pretendard';
+            margin-bottom: 40px;
+            .left {
+                display: flex;
+                gap: 60px;
+                .con1 {
+                    font-weight: 600;
+                }
+                .con2 {
+                    font-weight: 600;
+                    font-size: 28px;
+                }
+                .con3 {
+                    font-size: 14px;
+                }
+                ul {
+                    li {
+                        margin-bottom: 16px;
+                        span {
+                            cursor: pointer;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            .sns {
+                p {
+                    color: #848484;
+                    font-size: 12px;
+                    margin-bottom: 20px;
+                }
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    li {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        h3 {
+            font-size: 200px;
+            font-weight: 400;
+            letter-spacing: 23px;
+            text-align: center;
+        }
+    }
+}
