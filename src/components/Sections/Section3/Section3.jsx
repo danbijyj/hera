@@ -48,9 +48,11 @@ const Section3 = () => {
         <section id="section3" className="section3">
             <p ref={justRef} className="just">
                 Just me undefined Just me undefined Just me undefined Just me
-                undefined
+                undefined Just me undefined Just me undefined Just me undefined
+                Just me undefined
             </p>
             <p ref={hereRef} className="here">
+                here. now. myself. here. now. here. now. myself. here. now.
                 here. now. myself. here. now. here. now. myself. here. now.
             </p>
             <div className="seoul-wrapper">

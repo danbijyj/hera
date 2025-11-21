@@ -15,8 +15,71 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        margin-bottom: 70px;
         video {
             object-fit: cover;
+        }
+    }
+    .inner {
+        .swiper {
+            width: 100%;
+            height: 100%;
+            .swiper-slide {
+                border: 1px solid #000;
+                cursor: pointer;
+                .box {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-bottom: 1px solid #000;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: #000;
+                        opacity: 0.4;
+                        width: 100%;
+                        height: 100%;
+                        transition: opacity 0.2s;
+                    }
+                }
+                &:hover .box::after {
+                    opacity: 0;
+                }
+                .info {
+                    padding: 20px 20px 15px;
+                    p {
+                        &:first-child {
+                            font-family: 'pretendard';
+                            font-weight: 300;
+                        }
+                        &:last-child {
+                            font-family: 'pretendard';
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            .swiper-pagination {
+                position: static;
+                margin-top: 30px;
+                .swiper-pagination-bullet {
+                    margin: 0 10px;
+                    width: 12px;
+                    height: 12px;
+                }
+                .swiper-pagination-bullet-active {
+                    background-color: #000;
+                }
+            }
         }
     }
 }
