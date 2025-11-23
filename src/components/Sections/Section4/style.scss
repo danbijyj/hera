@@ -1,9 +1,72 @@
 @use '../../../styles/global.scss';
 
 .section4 {
+    margin-bottom: 50px;
     .inner {
         .title {
             font-size: 44px;
+            margin-bottom: 50px;
+        }
+        .product_wrap {
+            display: flex;
+            justify-content: space-between;
+            .box {
+                text-align: center;
+                width: 480px;
+                height: 750px;
+                padding: 50px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                transition: 0.2s ease;
+                position: relative;
+                z-index: 1;
+                * {
+                    position: relative;
+                    z-index: 2;
+                }
+                &:hover {
+                    color: #fff;
+                    button {
+                        opacity: 1;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        inset: 0;
+                        background-color: #000;
+                        opacity: 0.6;
+                        width: 100%;
+                        height: 100%;
+                        transition: opacity 0.2s;
+                        z-index: 1;
+                    }
+                }
+                .p_name {
+                    font-size: 24px;
+                    font-weight: 600;
+                    font-family: 'pretendard';
+                }
+                img {
+                    margin: 0 auto;
+                }
+                .p_desc {
+                    font-family: 'pretendard';
+                    margin-bottom: 20px;
+                    white-space: pre-line;
+                }
+                .p_en {
+                    font-size: 24px;
+                    margin-bottom: 25px;
+                }
+                button {
+                    font-size: 16px;
+                    padding: 10px 50px;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    opacity: 0;
+                }
+            }
         }
     }
 }

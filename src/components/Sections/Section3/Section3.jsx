@@ -10,10 +10,24 @@ const Section3 = () => {
     const justRef = useRef(null);
 
     useEffect(() => {
-        const here = hereRef.current;
         const just = justRef.current;
+        const here = hereRef.current;
 
         if (!here || !just) return;
+
+        const justStart = 0;
+        const justEnd = -(just.scrollWidth - window.innerWidth);
+        gsap.fromTo(
+            just,
+            { x: justStart },
+            {
+                x: justEnd,
+                scrollTrigger: {
+                    trigger: '#section3',
+                    scrub: 0.5,
+                },
+            }
+        );
 
         const hereStart = -here.scrollWidth;
         const hereEnd = 0;
@@ -22,20 +36,6 @@ const Section3 = () => {
             { x: hereStart },
             {
                 x: hereEnd,
-                scrollTrigger: {
-                    trigger: '#section3',
-                    scrub: 0.5,
-                },
-            }
-        );
-
-        const justStart = 0;
-        const justEnd = -(just.scrollWidth - innerWidth);
-        gsap.fromTo(
-            just,
-            { x: justStart },
-            {
-                x: justEnd,
                 scrollTrigger: {
                     trigger: '#section3',
                     scrub: 0.5,
