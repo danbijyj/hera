@@ -56,7 +56,7 @@ const Section2 = () => {
             img: '/images/s2_07.png',
             imgOn: '/images/s2_07_on.png',
             name: '25N1 엠버',
-            bgColor: 'rgba(158, 112, 75, 0.3)',
+            bgColor: 'rgba(126, 72, 28, 0.3)',
         },
     ];
 

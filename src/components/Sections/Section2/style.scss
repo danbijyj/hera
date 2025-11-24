@@ -6,7 +6,6 @@
     background-size: cover;
     height: 850px;
     text-align: center;
-
     .bg-overlay {
         position: absolute;
         top: 0;
@@ -16,11 +15,9 @@
         transition: background-color 0.5s ease;
         z-index: 1;
     }
-
     .inner {
         position: relative;
         z-index: 2;
-
         .title {
             font-size: 24px;
             font-weight: 600;
@@ -35,19 +32,16 @@
                         transition: all 0.3s ease;
                         transform: scale(0.7);
                         opacity: 0.5;
-
                         > div {
                             display: flex;
                             justify-content: center;
                             align-items: center;
                         }
-
                         .item {
                             width: 320px !important;
                             display: flex;
                             flex-direction: column;
                             align-items: center;
-
                             .pic {
                                 position: relative;
                                 width: 100%;
@@ -70,7 +64,6 @@
                                     opacity: 0;
                                 }
                             }
-
                             p {
                                 width: 100%;
                                 font-size: 20px;
@@ -113,6 +106,10 @@
                                     .img-hover {
                                         opacity: 1;
                                     }
+                                }
+                                button {
+                                    background-color: #000;
+                                    color: #fff;
                                 }
                             }
                         }
