@@ -16,7 +16,7 @@ const Section3 = () => {
         if (!here || !just) return;
 
         const justStart = 0;
-        const justEnd = -(just.scrollWidth - window.innerWidth);
+        const justEnd = -(just.scrollWidth * 0.2);
         gsap.fromTo(
             just,
             { x: justStart },
@@ -49,7 +49,6 @@ const Section3 = () => {
             <p ref={justRef} className="just">
                 Just me undefined Just me undefined Just me undefined Just me
                 undefined Just me undefined Just me undefined Just me undefined
-                Just me undefined
             </p>
             <p ref={hereRef} className="here">
                 here. now. myself. here. now. here. now. myself. here. now.
